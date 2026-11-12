@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Học viện Bóng đá 433 | Hãy ra sân và tận hưởng chơi bóng</title>
+<style>
+:root{--main:#036b3a;--light:#3f9765;--ink:#111;--muted:#555;--soft:#f3f8f5;--gold:#e8c53a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:#fff;border-bottom:3px solid var(--main);z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:70px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--main);font-size:18px}
+.brand img{height:52px;width:auto;border-radius:4px}
+nav a{margin-left:20px;font-size:14px;font-weight:600;text-transform:uppercase;color:var(--ink)}
+nav a:hover{color:var(--main)}
+.btn{display:inline-block;background:var(--main);color:#fff;padding:14px 28px;font-weight:800;border-radius:4px}
+.btn:hover{background:var(--light)}
+.btn-gold{background:var(--gold);color:var(--ink)}
+.hero{position:relative;color:#fff;padding:120px 0;background:var(--main) center/cover no-repeat}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(3,107,58,.85) 0%,rgba(3,107,58,.55) 100%)}
+.hero .wrap{position:relative}
+.hero h1{font-size:52px;line-height:1.1;font-weight:900;max-width:720px;margin-bottom:16px}
+.hero p{font-size:18px;opacity:.95;max-width:560px;margin-bottom:30px}
+section{padding:80px 0}
+.kicker{color:var(--main);font-weight:700;text-transform:uppercase;letter-spacing:1px;font-size:13px;margin-bottom:8px}
+h2{font-size:32px;font-weight:800;margin-bottom:12px}
+.sub{color:var(--muted);margin-bottom:36px;max-width:680px}
+.alt{background:var(--soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border-top:4px solid var(--main);padding:26px;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.card.l{border-top-color:var(--light)}
+.card.g{border-top-color:var(--gold)}
+.card h3{font-size:20px;margin-bottom:6px}
+.time{font-weight:700;color:var(--main);margin-bottom:12px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.photo{border-radius:6px;min-height:320px;background:#fff center/contain no-repeat}
+table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+th,td{padding:14px 16px;text-align:left;border-bottom:1px solid #e5eee9}
+th{background:var(--main);color:#fff}
+.note{color:var(--muted);font-size:14px;margin-top:12px;font-style:italic}
+.addr{background:#fff;padding:26px;box-shadow:0 2px 12px rgba(0,0,0,.06);border-left:4px solid var(--main)}
+.contact{background:var(--main);color:#fff;text-align:center}
+.contact h2{color:#fff}
+.contact p{opacity:.92;margin-bottom:24px}
+.dk-form{max-width:760px;margin:24px auto 0;display:flex;flex-direction:column;gap:12px;text-align:left}
+.dk-row{display:flex;gap:12px;flex-wrap:wrap}
+.dk-row>*{flex:1;min-width:220px}
+.dk-form input,.dk-form select,.dk-form textarea{width:100%;padding:14px;border:none;border-radius:4px;font-size:15px;font-family:inherit;background:#fff;color:#111}
+.dk-btn{width:100%;padding:16px;border:none;background:var(--gold);color:#111;font-weight:800;font-size:16px;cursor:pointer;border-radius:4px}
+.dk-btn:hover{filter:brightness(.95)}
+.dk-thongbao{background:#fff;color:var(--main);padding:12px;border-radius:4px;font-weight:700}
+.btns a{margin:6px;display:inline-block}
+footer{background:#0b1f15;color:#c9d9cf;padding:34px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+footer img{height:56px;width:auto}
+@media(max-width:760px){.hero h1{font-size:34px}nav{display:none}h2{font-size:26px}.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand"><img src="img/logo_top.jpg" alt="Logo Học viện Bóng đá 433">HỌC VIỆN BÓNG ĐÁ 433</div>
+    <nav>
+      <a href="#triet-ly">Triết lý</a>
+      <a href="#gioi-thieu">Giới thiệu</a>
+      <a href="#lop-hoc">Lớp học</a>
+      <a href="#hoc-phi">Học phí</a>
+      <a href="#dang-ky">Đăng ký</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="background-image:url('img/hero.jpg')">
+  <div class="wrap">
+    <h1>Hãy ra sân và tận hưởng chơi bóng</h1>
+    <p>Học viện bóng đá trẻ em tại Phúc Lợi, Hà Nội. Đào tạo kỹ thuật và tinh thần thi đấu theo từng độ tuổi.</p>
+    <a class="btn btn-gold" href="#dang-ky">Đăng ký trải nghiệm</a>
+  </div>
+</section>
+
+<section id="triet-ly">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Triết lý huấn luyện</div>
+      <h2>Chơi bóng để lớn lên</h2>
+      <p class="sub">Chúng tôi không chỉ dạy kỹ thuật. Trẻ học cách tự tin trên sân, biết chào hỏi, biết chia sẻ và biết chơi đội. Niềm vui chơi bóng là động lực để trẻ phát triển bền lâu.</p>
+    </div>
+    <div class="photo" style="background-image:url('img/triet.jpg')"></div>
+  </div>
+</section>
+
+<section id="gioi-thieu" class="alt">
+  <div class="wrap">
+    <div class="kicker">Giới thiệu</div>
+    <h2>Học viện 433</h2>
+    <p class="sub">Thành lập năm 2026 bởi Coach Long, HLV có chứng chỉ huấn luyện: Barcelona Innovation Hub, Cruyff Football Coaching Level 1, AFC C.</p>
+    <div class="grid">
+      <div class="card"><h3>Chứng chỉ quốc tế</h3><p>Phương pháp huấn luyện theo chuẩn Barcelona và Cruyff Football.</p></div>
+      <div class="card l"><h3>Theo từng độ tuổi</h3><p>Chương trình riêng cho U8, U9, U10, U11.</p></div>
+      <div class="card g"><h3>Môi trường an toàn</h3><p>Sân trường THPT Phúc Lợi, gần nhà, dễ đưa đón.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lop-hoc">
+  <div class="wrap">
+    <div class="kicker">Lớp học</div>
+    <h2>Lịch học theo lớp</h2>
+    <p class="sub">Chọn lớp phù hợp với độ tuổi của con và bấm đăng ký.</p>
+    <div class="grid">
+      <div class="card"><h3>Lớp U9</h3><div class="time">17h00 – 18h00 · Thứ 3, 5</div><a class="btn" href="#dang-ky">Đăng ký lớp U9</a></div>
+      <div class="card l"><h3>Lớp U11</h3><div class="time">17h00 – 18h00 · Thứ 2, 4, 6</div><a class="btn" href="#dang-ky">Đăng ký lớp U11</a></div>
+      <div class="card g"><h3>Năng khiếu U8</h3><div class="time">8h00 sáng · Thứ 7, Chủ nhật</div><a class="btn" href="#dang-ky">Đăng ký lớp U8</a></div>
+      <div class="card"><h3>Năng khiếu U10</h3><div class="time">10h00 sáng · Thứ 7, Chủ nhật</div><a class="btn" href="#dang-ky">Đăng ký lớp U10</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="hoc-phi" class="alt">
+  <div class="wrap">
+    <div class="kicker">Học phí</div>
+    <h2>Bảng học phí · Cơ sở Hà Nội</h2>
+    <p class="sub">Công bố rõ ràng theo gói thời gian học.</p>
+    <table>
+      <thead><tr><th>Mục</th><th>1 tháng</th><th>3 tháng</th><th>6 tháng</th><th>12 tháng</th></tr></thead>
+      <tbody>
+        <tr><td>Phí đăng ký</td><td>220.000đ</td><td>—</td><td>—</td><td>—</td></tr>
+        <tr><td>Học phí tháng</td><td>980.000đ</td><td>2.940.000đ</td><td>5.880.000đ</td><td>11.760.000đ</td></tr>
+        <tr><td>Phí CSCV</td><td>170.000đ</td><td>510.000đ</td><td>1.020.000đ</td><td>2.040.000đ</td></tr>
+        <tr><td>Discount</td><td>—</td><td>—</td><td>−245.000đ</td><td>1.150.000đ</td></tr>
+        <tr><td><strong>Tổng chi phí</strong></td><td><strong>1.370.000đ</strong></td><td><strong>3.450.000đ</strong></td><td><strong>6.655.000đ</strong></td><td><strong>12.650.000đ</strong></td></tr>
+      </tbody>
+    </table>
+    <p class="note">Giá chưa gồm VAT. Liên hệ để được tư vấn lớp phù hợp.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Địa chỉ</div>
+      <h2>Nơi tập luyện</h2>
+      <div class="addr"><p><strong>Sân bóng trường THPT Phúc Lợi</strong></p><p>Phố Phúc Lợi, Hà Nội</p></div>
+    </div>
+    <div class="photo" style="background-image:url('img/diachi.jpg')"></div>
+  </div>
+</section>
+<section id="dang-ky" class="contact" style="background:linear-gradient(rgba(3,107,58,.9),rgba(3,107,58,.9)),url('img/dk.jpg') center/cover no-repeat">
+  <div class="wrap">
+    <h2>Đăng ký trải nghiệm</h2>
+    <p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ tư vấn và xếp lớp phù hợp.</p>
+    <form id="form-dk" class="dk-form" onsubmit="return guiDangKy(event)">
+      <div class="dk-row">
+        <input type="text" name="ten_phu_huynh" placeholder="Họ và tên phụ huynh" required>
+        <input type="tel" name="sdt" placeholder="Số điện thoại" required>
+      </div>
+      <div class="dk-row">
+        <input type="text" name="ten_con" placeholder="Họ và tên con" required>
+        <input type="number" name="tuoi_con" placeholder="Tuổi của con" min="3" max="16" required>
+      </div>
+      <div class="dk-row">
+        <select name="lop" required>
+          <option value="">-- Chọn lớp --</option>
+          <option>Lớp U9 · Thứ 3, 5 · 17h–18h</option>
+          <option>Lớp U11 · Thứ 2, 4, 6 · 17h–18h</option>
+          <option>Năng khiếu U8 · Thứ 7, CN · 8h sáng</option>
+          <option>Năng khiếu U10 · Thứ 7, CN · 10h sáng</option>
+          <option>Lớp khác / chưa chắc</option>
+        </select>
+      </div>
+      <div class="dk-row">
+        <textarea name="mong_muon" rows="3" placeholder="Ghi thêm nếu con phù hợp lớp khác hoặc anh/chị có mong muốn riêng (ví dụ: muốn học buổi khác, tập trung kỹ thuật, con đã biết chơi bóng…)"></textarea>
+      </div>
+      <div class="dk-row">
+        <button type="submit" class="dk-btn">Nộp đăng ký trải nghiệm</button>
+      </div>
+      <p id="dk-thongbao" class="dk-thongbao" hidden></p>
+    </form>
+    <div class="btns" style="margin-top:22px">
+      <a class="btn btn-gold" href="https://zalo.me/0909231088">Zalo: 0909231088</a>
+      <a class="btn btn-gold" href="mailto:longhm.ftu@gmail.com">longhm.ftu@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <img src="img/logo_foot.png" alt="Logo 433">
+    <div>© Học viện Bóng đá 433 · Coach Long · Phúc Lợi, Hà Nội</div>
+  </div>
+</footer>
+
+<script>
+function guiDangKy(e){
+  e.preventDefault();
+  var f = document.getElementById('form-dk');
+  var t = document.getElementById('dk-thongbao');
+  var du = { phu_huynh: f.ten_phu_huynh.value, sdt: f.sdt.value, con: f.ten_con.value,
+             tuoi: f.tuoi_con.value, lop: f.lop.value, mong_muon: f.mong_muon.value };
+  try { var ds = JSON.parse(localStorage.getItem('dk433') || '[]'); ds.push(du); localStorage.setItem('dk433', JSON.stringify(ds)); } catch(err) {}
+  t.hidden = false;
+  t.textContent = 'Cảm ơn anh/chị! Đăng ký đã được ghi nhận. Chúng tôi sẽ liên hệ qua số điện thoại đã cung cấp.';
+  f.reset();
+  return false;
+}
+</script>
+</body>
+</html>
