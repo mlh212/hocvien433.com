@@ -152,7 +152,11 @@ footer img{height:56px;width:auto}
   <div class="wrap">
     <h2>Đăng ký trải nghiệm</h2>
     <p>Điền thông tin bên dưới, chúng tôi sẽ liên hệ tư vấn và xếp lớp phù hợp.</p>
-    <form id="form-dk" class="dk-form" onsubmit="return guiDangKy(event)">
+    <form id="form-dk" class="dk-form" action="https://formsubmit.co/longhm.ftu@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Đăng ký trải nghiệm - Học viện 433">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://mlh212.github.io/hocvien433.com/?dk=ok">
       <div class="dk-row">
         <input type="text" name="ten_phu_huynh" placeholder="Họ và tên phụ huynh" required>
         <input type="tel" name="sdt" placeholder="Số điện thoại" required>
@@ -180,7 +184,7 @@ footer img{height:56px;width:auto}
       <p id="dk-thongbao" class="dk-thongbao" hidden></p>
     </form>
     <div class="btns" style="margin-top:22px">
-      <a class="btn btn-gold" href="https://zalo.me/0909231088">Zalo: 0909231088</a>
+      <a class="btn btn-gold" href="https://zalo.me/0909231088">Nhắn Zalo 0909231088</a>
       <a class="btn btn-gold" href="mailto:longhm.ftu@gmail.com">longhm.ftu@gmail.com</a>
     </div>
   </div>
@@ -194,18 +198,7 @@ footer img{height:56px;width:auto}
 </footer>
 
 <script>
-function guiDangKy(e){
-  e.preventDefault();
-  var f = document.getElementById('form-dk');
-  var t = document.getElementById('dk-thongbao');
-  var du = { phu_huynh: f.ten_phu_huynh.value, sdt: f.sdt.value, con: f.ten_con.value,
-             tuoi: f.tuoi_con.value, lop: f.lop.value, mong_muon: f.mong_muon.value };
-  try { var ds = JSON.parse(localStorage.getItem('dk433') || '[]'); ds.push(du); localStorage.setItem('dk433', JSON.stringify(ds)); } catch(err) {}
-  t.hidden = false;
-  t.textContent = 'Cảm ơn anh/chị! Đăng ký đã được ghi nhận. Chúng tôi sẽ liên hệ qua số điện thoại đã cung cấp.';
-  f.reset();
-  return false;
-}
 </script>
+<script>if(location.search.indexOf('dk=ok')>=0){var t=document.getElementById('dk-thongbao');if(t){t.hidden=false;t.textContent='Cảm ơn anh/chị! Đăng ký đã được gửi. Chúng tôi sẽ liên hệ sớm.';}}</script>
 </body>
 </html>
